@@ -29,6 +29,7 @@ end
 
 # Main alias
 alias rgrep (command -v grep)
+alias rg _fish_ripgrep_grep
 alias grep _fish_ripgrep_grep
 # Convenience aliases
 alias rga _fish_ripgrep_rga
