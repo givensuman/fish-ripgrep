@@ -27,10 +27,13 @@ if test "$TERM" = dumb
     return 1
 end
 
-# Main alias
-alias rgrep (command -v grep)
+# Main aliases
 alias rg _fish_ripgrep_grep
+if command -q grep
+    alias rgrep (command -v grep)
+end
 alias grep _fish_ripgrep_grep
+
 # Convenience aliases
 alias rga _fish_ripgrep_rga
 alias rgf _fish_ripgrep_rgf
